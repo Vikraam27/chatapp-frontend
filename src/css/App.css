@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.app {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #1E2428;
+}
+
+.app__body {
+    display: flex;
+    background-color: #1E2428;
+    height: 100vh;
+    width: 100vw;
+}

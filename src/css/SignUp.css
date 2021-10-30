@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.align {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font: 300 1rem/1.5 Helvetica Neue, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #b3b3b3;
+}
+.align__item--start {
+    align-self: flex-start;
+}
+.align__item--end {
+    align-self: flex-end;
+}
+input {
+    border: 0;
+    font: inherit;
+}
+input::placeholder {
+    color: #7e8ba3;
+}
+.form__field {
+    margin-bottom: 1rem;
+}
+.form input {
+    outline: 0;
+    padding: 0.5rem 1rem;
+}
+.form input[type="password"], .register input[type="text"]  {
+    width: 100%;
+}
+.grid {
+    margin: 0 auto;
+    max-width: 25rem;
+    width: 100%;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+    color: #96999e;
+}
+.site__logo {
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+}
+a {
+    color: #7e8ba3;
+}
+.register {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 4rem 2rem;
+    height: 95vh;
+    background-color: #242c37;
+}
+
+.register input {
+    border: 1px solid #96999e;
+    border-radius: 999px;
+    background-color: transparent;
+    text-align: center;
+    color: #bbbfc5;
+}
+.register input[type="password"] , .register input[type="text"] {
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: 1rem 50%;
+}
+
+.register input[type="submit"] {
+    background-image: linear-gradient(160deg, #8ceabb 0%, #378f7b 100%);
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+p {
+    color: #bbbfc5;
+}
+.note {
+    padding: 0 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.success {
+    background-color: #5d925d;
+}
+.fail {
+    background-color: #854242;
+}
+
+@media screen and (max-width: 420px) {
+    .register{
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .grid {
+        margin: 0;
+    }
+}

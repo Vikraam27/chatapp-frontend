@@ -1,0 +1,25 @@
+.empty_chat {
+    display: flex;
+    flex: 0.73;
+    background-color: #262D31;
+    min-width: 370px;
+    margin: 0 auto;
+}
+.container {
+    margin: auto;
+}
+.empty_chat > div > h2 {
+    color: #A6A8AB;
+    text-transform: none;
+    font-weight: lighter;
+    margin: 30px 0;
+}
+.logo {
+    background-image: url('../image/offline.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+}

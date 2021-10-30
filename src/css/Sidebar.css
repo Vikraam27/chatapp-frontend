@@ -1,0 +1,133 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.27;
+    width: 370px;
+    min-width: 370px;
+}
+
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-right: 1px solid #3F4347;
+    background-color: #2A2F32;
+}
+.sidebar__header > .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+}
+.sidebar__headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+
+.sidebar__headerRight > button > .MuiIconButton-label > .MuiSvgIcon-root {
+    margin-right: 1vw;
+    font-size: 24px !important;
+    color: #B1B3B5;
+}
+
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    background: #131C21;
+    height: 50px;
+    border-bottom: 1px solid #30383d;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #131C21; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #394045; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.sidebar_searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: #323739;
+    width: 100%;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.sidebar_searchContainer > .MuiSvgIcon-root {
+    color: #828689 !important;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.sidebar_searchContainer > input {
+    border: none;
+    background-color: #323739;
+    outline-width: 0;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.sidebar__chats {
+    flex: 1;
+    background-color: #131C21;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* sidebar chat */
+.sidebarChat {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #30383d;
+}
+.sidebarChat > .MuiAvatar-root {
+    margin: 0 15px;
+    width: 49px;
+    height: 49px;
+}
+
+.sidebarChat:hover {
+    background-color: #30383dda;
+}
+
+.sidebarChat__info {
+    margin-left: 16px;
+}
+
+
+.sidebarChat__info > h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #fff;
+    text-transform: none;
+    text-overflow: ellipsis;
+}
+.sidebarChat__info > p {
+    font-size: 13px;
+}
+
+.blank_chat_room{
+    text-align: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        min-width: 100%;
+    }
+}
